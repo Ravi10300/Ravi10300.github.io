@@ -206,122 +206,148 @@
 
 
 
-    <!-- <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<div class="row d-flex"> -->
-					<!-- <div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/bg_main.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									 Details next to profile image -->
-									<!-- <div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Ravi Kumar Shrivastav</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Certified Data Analyst</span></p>
-										<p><span class="title-s">Experience: </span> <span>Fresher</span></p>
-										<p><span class="title-s">Address: </span> <span>Gurugram, Haryana</span></p>
-									  </div>
-									</div>
-								  </div>
 
-								  <div class="skill-mf">
-									<p class="title-s">Skills</p>
-								
-									<span>Python </span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div> -->
-								
-									<!-- <span>Exploratory Data Analysis (EDA)</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								
-									<span>SQL </span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								
-									<span>Power BI </span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div> -->
-								
-									<!-- <span>MS Excel</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								
-									<span>Data Cleaning & Preprocessing</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-					</div> --> 
-					 
-					<!-- <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
+<!-- Skills Section Start -->
+<section class="ftco-section" id="skills-section">
+  <style>
+    .skill-icon {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-<p>Welcome to my portfolio website! I'm an enthusiastic and detail-oriented aspiring Data Analyst with a strong foundation in Power BI, SQL, Python and Exploratory Data Analysis (EDA).  
-As a fresher, I have developed hands-on skills through projects and certifications in Python, SQL, Power BI, and Advanced Excel.  
-I'm passionate about transforming raw data into meaningful insights that drive informed decision-making. Below, you'll find a summary of my skills, projects, and certifications that showcase my capabilities in data analytics.</p>
+    .skill-icon:hover {
+      transform: scale(1.15);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
-<ul class="about-info mt-4 px-md-0 px-2">
-    <li class="d-flex"><span>Profile:</span> <span>Data Analytics</span></li>
-    <li class="d-flex"><span>Domains:</span> <span>Data Analysis (Finance, Healthcare, E-commerce, Retail, Supply Chain)</span></li>
-    <li class="d-flex"><span>Education:</span> <span>Bachelor of Computer Applications (BCA)</span></li>
-    <li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-    <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, MS Excel, Power Query, Pivot Table, Dashboard</span></li>
-    <li class="d-flex"><span>Programming:</span> <span>SQL,Python, C, C++</span></li>
-    <li class="d-flex"><span>Data Analysis:</span> <span>Data Exploration, Cleaning, Manipulation, Analysis, Visualization, Statistics</span></li>
-    <li class="d-flex"><span>Soft Skills:</span> <span>Communication, Problem-Solving, Analytical Thinking, Teamwork, Business Understanding</span></li>
-    <li class="d-flex"><span>Development:</span> <span>HTML, CSS, JavaScript, Python</span></li>
-    <li class="d-flex"><span>Tools:</span> <span>PyCharm, Jupyter, VS Code, Notebook, PgAdmin, MySQL Workbench</span></li>
-    <li class="d-flex"><span>Interest:</span> <span>Data Storytelling, Technology, Blogging</span></li>
-</ul>
+    .skill-name {
+      font-weight: 500;
+      margin-top: 10px;
+      font-size: 14px;
+    }
 
+    /* Animations */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
 
-							</div>
-						</div>
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
 
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(3deg); }
+      100% { transform: rotate(-3deg); }
+    }
 
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="2">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/ravi-shrivastav-5859b0246/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section> -->
+    @keyframes wiggle {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-4px); }
+      75% { transform: translateX(4px); }
+    }
+
+    @keyframes slide {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(6px); }
+      100% { transform: translateY(0); }
+    }
+
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-pulse { animation: pulse 2.5s ease-in-out infinite; }
+    .animate-rotate { animation: rotate 4s ease-in-out infinite; }
+    .animate-wiggle { animation: wiggle 2s ease-in-out infinite; }
+    .animate-slide { animation: slide 3s ease-in-out infinite; }
+  </style>
+
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+      <h1 class="big big-2">Skills</h1>
+            <h2 class="mb-4">Technical Skills</h2>
+        <p>A collection of tools and technologies I use across data analysis, visualization, and automation.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- Apply different animations to each icon -->
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <img src="https://img.icons8.com/color/96/000000/python.png" alt="Python" class="img-fluid skill-icon animate-float" style="max-height: 60px;">
+        <p class="skill-name">Python</p>
+      </div>
+
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <img src="https://img.icons8.com/ios-filled/100/00758F/sql.png" alt="SQL" class="img-fluid skill-icon animate-wiggle" style="max-height: 60px;">
+        <p class="skill-name">SQL</p>
+      </div>
+
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <img src="https://img.icons8.com/color/96/000000/power-bi.png" alt="Power BI" class="img-fluid skill-icon animate-slide" style="max-height: 60px;">
+        <p class="skill-name">Power BI</p>
+      </div>
+
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <img src="https://img.icons8.com/color/96/000000/microsoft-excel-2019--v1.png" alt="Excel" class="img-fluid skill-icon animate-pulse" style="max-height: 60px;">
+        <p class="skill-name">Excel</p>
+      </div>
+
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter" class="img-fluid skill-icon animate-rotate" style="max-height: 60px;">
+        <p class="skill-name">Jupyter</p>
+      </div>
+
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <img src="https://img.icons8.com/color/96/000000/github.png" alt="GitHub" class="img-fluid skill-icon animate-wiggle" style="max-height: 60px;">
+        <p class="skill-name">GitHub</p>
+      </div>
+
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <img src="https://img.icons8.com/color/96/000000/mysql-logo.png" alt="MySQL" class="img-fluid skill-icon animate-float" style="max-height: 60px;">
+        <p class="skill-name">MySQL</p>
+      </div>
+
+	  <!-- Data Modeling -->
+
+    <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+      <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-database-data-analytics-flaticons-lineal-color-flat-icons.png" 
+       alt="Data Modeling" class="img-fluid skill-icon animate-float" style="max-height: 60px;">
+       <p class="skill-name">Data Modeling</p>
+    </div>
 
 
+<!-- Data Automation -->
+     <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+       <img src="https://img.icons8.com/color/96/robot-2.png" 
+    alt="Data Automation" class="img-fluid skill-icon animate-rotate" style="max-height: 60px;">
+     <p class="skill-name">Data Automation</p>
+    </div>
 
+
+<!-- PgAdmin (PostgreSQL) -->
+   <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+     <img src="https://img.icons8.com/color/96/000000/postgreesql.png" 
+       alt="PgAdmin SQL" class="img-fluid skill-icon animate-slide" style="max-height: 60px;">
+  <p class="skill-name">PgAdmin SQL</p>
+   </div>
+
+
+
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <img src="https://img.icons8.com/color/96/000000/html-5--v1.png" alt="HTML" class="img-fluid skill-icon animate-slide" style="max-height: 60px;">
+        <p class="skill-name">HTML</p>
+      </div>
+
+      <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+        <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS" class="img-fluid skill-icon animate-pulse" style="max-height: 60px;">
+        <p class="skill-name">CSS</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Skills Section End -->
 	
     <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
